@@ -1,0 +1,5 @@
+<h1> html page </h1>
+<%=  data.Year %>
+<% data.Search.forEach(function(param){ %>
+    <li><%= param.Title %> - <%= param.Year %> </li>
+<% }) %>

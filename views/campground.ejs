@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<div class = "container">
+    <header class = "jumbotron">
+        <h1>
+            This is the CampGround Page
+        </h1>
+        <p>
+            View our hand-picked campgrounds all over the world
+        </p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="/campground/new">Add New CampGround</a>
+        </p>
+    </header>
+    <% campgrounds.forEach(function(camppic){ %>
+            <div>
+                <h4><%= camppic.name %></h4>
+                <img src = "<%= camppic.image %>">
+            </div>
+    <% }); %>
+</div>
+
+<%- include("partials/footer") %>
