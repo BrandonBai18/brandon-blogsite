@@ -1,6 +1,7 @@
 {
   "requires": true,
   "lockfileVersion": 1,
+  "main": "blog.js",
   "dependencies": {
     "@sindresorhus/is": {
       "version": "0.14.0",
